@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/menuSlide">
+        <item
+            android:id="@+id/menuSlideItem01"
+            android:icon="@drawable/brush"
+            android:title="@string/open_drawer" />
+        <item
+            android:id="@+id/menuSlideItem02"
+            android:icon="@drawable/collection"
+            android:title="@string/close_drawer" />
+        <item
+            android:id="@+id/menuSlideItem03"
+            android:icon="@drawable/headlines"
+            android:title="@string/haoyue" />
+    </group>
+
+</menu>

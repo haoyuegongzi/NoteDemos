@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haoyue.notedemos.dialog.DialogActivity">
+
+    <com.haoyue.auxiliary.AdaptiveImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/zero04" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btIntiDialog"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="Dialog与Activity的生命周期"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btDialogSetItem"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="dialogSetItem"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btDialogSingleChoiceItems"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="dialogSetSingleChoiceItems"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btDialogSetMultiChoiceItems"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="dialogSetMultiChoiceItems"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btProgressDialogCycler"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="ProgressDialogCycler"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btProgressDialogHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="ProgressDialogHorizontal"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btDataPickerDialog"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="DataPickerDialog"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btTimePickerDialog"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/state_selector"
+                android:text="TimePickerDialog"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="supper_small">10dp</dimen>
+    <dimen name="small">12dp</dimen>
+    <dimen name="small_middle">14dp</dimen>
+    <dimen name="middle">16dp</dimen>
+    <dimen name="middle_large">18dp</dimen>
+    <dimen name="large">20dp</dimen>
+    <dimen name="supper_large">32dp</dimen>
+    <dimen name="particularly_large">44dp</dimen>
+</resources>

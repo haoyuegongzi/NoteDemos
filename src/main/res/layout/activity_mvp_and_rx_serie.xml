@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e9e9e9"
+    tools:context=".retrofit.mvp.view.MvpAndRxSerieActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llPostRequest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#76dfcb"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGetRetrofit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="GetRetrofit"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvGetRetrofitWithMap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="GetRetrofitWithMap"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvGetRetrofitAndRxJavaWithMap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="GetRetrofitAndRxAndMap"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvGetRetrofitAndRxJava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="GetRetrofitAndRxJava"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llGetRequest"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPostRetrofit"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="PostRetrofit"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvPostRetrofitWithMap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="PostRetrofitWithMap"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvPostRetrofitAndRxJavaWithMap"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="PostRetrofitAndRxAndMap"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/tvPostRetrofitAndRxJava"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="PostRetrofitAndRxJava"
+                android:gravity="center_vertical"
+                android:background="#ffffff"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRequestContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="16sp"/>
+
+</LinearLayout>

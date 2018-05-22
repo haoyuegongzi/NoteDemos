@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h4>JS与Android（Java）的交互</h4>
+    <input type="button" value="js调Android" onclick="ok()">
+
+    <script type="text/javascript">
+        function ok() {
+            android.webMessage("JS与Android（Java）的交互");
+        }
+
+        function javaCallJavascriptNoParam() {
+             alert("Android中的Java通过WebView调用了javaScript的无参构造");
+             document.getElementById("javacalljs").innerHTML = "Android中的Java通过WebView调用了javaScript的无参构造<br\>";
+        }
+
+        function javaCallJavascript(param) {
+             alert(param);
+             document.getElementById("javacalljs").innerHTML = param;
+        }
+        <!----><!----><!---->
+        <!----><!----><!---->
+        <!----><!----><!---->
+        function javaCallJsNoArgs() {
+            document.getElementById("content1").innerHTML += "js调用java，Java再回调js的无参方法<br\>"
+        }
+
+        function javaCallJsExistArgs(args) {
+            document.getElementById("content2").innerHTML += "js调用java，Java再回调js的无参方法,参数是：" + args + "<br\>";
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+<div id="javacalljs"></div>
+<br/><br/>
+
+        JS与Android（Java）的交互<br/><br/><br/>
+    <input type="button" value="JS调Java无参方法方法然后再回调"
+           onclick="js_call_java.javaCallJsMethod1()"/><br/>
+        <div id="content1"></div>
+    <br/><br/>
+    <input type="button" value="JS调Java有参方法方法然后再回调"
+           onclick="js_call_java.javaCallJsMethod2()"/><br/>
+        <div id="content2"></div>
+</body>
+</html>

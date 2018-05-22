@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--DrawerLayout最好为界面的根布局-->
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlSideSlide"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haoyue.notedemos.drawerlayout.DrawerLayoutActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/zero01" />
+
+    <!--侧滑菜单的布局主布局代码要放在的前面-->
+    <!--侧滑菜单部分的布局(这里是ListView)必须设置layout_gravity属性-->
+    <ListView
+        android:id="@+id/lvLeftDrawer"
+        android:layout_width="150dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#8b8b8b"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorPrimary"
+        android:dividerHeight="0dp" />
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.haoyue.notedemos.input.DialogActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="剑九·轮回：意为“八式往复入轮回”.\n剑十·天葬：意为“自生而灭为天葬”.\n剑十一·涅槃：意为“极而复始，不生不灭是为涅槃”。"/>
+
+</LinearLayout>

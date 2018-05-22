@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NoteDemos</string>
+    <string name="open_drawer">打开侧滑</string>
+    <string name="close_drawer">关闭侧滑</string>
+    <string name="haoyue">皓月公子的博客</string>
+    <string name="blog_name">我的博客</string>
+    <string name="blog_link">http://blog.csdn.net/haoyuegongzi</string>
+    <string name="news">新闻</string>
+    <string name="photo">图片</string>
+    <string name="video">视频</string>
+    <string name="toutiao">头条号</string>
+    <string name="search">search</string>
+    <string name="add">add</string>
+    <string name="setting">setting</string>
+    <string name="help">help</string>
+    <string name="toolbar_title">toolbar</string>
+    <string name="subtitle">subtitle</string>
+    <string name="customTooleBar">自定义的控件</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="black_fragment">Hello black fragment</string>
+    <string name="hello_sophix_patchtool_fragment">Hello SophixPatchTool</string>
+    <string name="sophix_patchtool">阿里热修复</string>
+
+    <string name="gravity_left">left</string>
+    <string name="gravity_center">center</string>
+    <string name="gravity_right">right</string>
+</resources>

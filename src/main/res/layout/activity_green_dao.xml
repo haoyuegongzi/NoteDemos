@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.haoyue.notedemos.sql.GreenDaoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btinsertOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="insertOne"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btinsertOrReplaceOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="insertOrReplaceOne"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btinsertManyData"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="insertManyData"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btinsertInTxManyData"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="insertInTxManyData"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btquerryAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="querryAll"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btqueryBuilder"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="queryBuilder"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btquerryCount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="querryCount"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btupdateOneData"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="updateOneData"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        // deleteByKey deleteByKeyList
+
+        <Button
+            android:id="@+id/btupdateList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="updateList"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btdeleteDataList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="deleteDataList"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btdeleteAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="deleteAll"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btdeleteOneData"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="deleteOneData"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btdeleteByKey"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="deleteByKey"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btdeleteByKeyList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="deleteByKeyList"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btqueryUserList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="queryUserList"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvGreenDao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"/>
+</LinearLayout>

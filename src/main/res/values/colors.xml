@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c1olorAccent">#ffffff</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="toolbar_title">#ffffff</color>
+
+    <color name="light_purple">#CFC3ED</color>
+    <color name="light_blue">#AFBDFA</color>
+    <color name="light_green">#A2D0FF</color>
+    <color name="blue_green">#5ED9F0</color>
+    <color name="green">#8FE6C3</color>
+    <color name="deep_green">#76DFCB</color>
+    <color name="light_red">#FFB1A2</color>
+    <color name="sky_blue1">#93A5F4</color>
+    <color name="sky_blue2">#61A6EF</color>
+    <color name="sky_blue3">#428DDD</color>
+    <color name="sky_blue_green">#43C5DD</color>
+    <color name="black">#000000</color>
+    <color name="b8b8b8">#8b8b8b</color>
+
+    <color name="tag_bg_selected">#54B1FF</color>
+    <color name="tag_bg_unselected">#EAEAEA</color>
+    <color name="tag_text_selected">#FFFFFF</color>
+    <color name="tag_text_unselected">#656565</color>
+
+</resources>

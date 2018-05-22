@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemNews"
+        android:icon="@drawable/news"
+        android:title="@string/news"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/itemPhoto"
+        android:icon="@drawable/photo"
+        android:title="@string/photo"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/itemVideo"
+        android:icon="@drawable/video"
+        android:title="@string/video"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/itemTotiao"
+        android:icon="@drawable/toutiao"
+        android:title="@string/toutiao"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+</menu>

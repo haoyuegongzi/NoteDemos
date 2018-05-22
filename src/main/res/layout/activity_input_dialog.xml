@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.haoyue.notedemos.input.InputDialogActivity">
+
+    <Button
+        android:id="@+id/btInputDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试带输入框的  Dialog"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btDialogActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="测试对话框式的Activity"
+        android:textAllCaps="false"
+        android:padding="5dp"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/etListener"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/edittext_bc"
+        android:hint="InputText"
+        android:textColorHint="#00bb33"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>

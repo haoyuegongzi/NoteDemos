@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/zero03"
+    android:antialias="true"
+    android:dither="true"
+    android:filter="true"
+    android:gravity="center"
+    android:mipMap="false"
+    android:tileMode="disabled"/>
+
+<!--属性解释：
+    src：资源ID，不多说；
+    antialias：是否开启抗锯齿功能，但这个功能比较弱；
+    dither：是否开启抖动效果当图片像素配置RGB8888与手机屏幕像素配置RGB555不一致时，
+            开启这个功能提高显示效果。Android中创建bitmap对象一般用RGB8888模式；
+    filter：是否开启过滤效果，另外图片尺寸被压缩或者拉伸时，开启这个效果，
+            可以较好的避免图片显示失真；
+    gravity：图片显示在屏幕上的位置；
+    mipMap：一种图像处理技术，也叫纹理映射，比较抽象，不多说；
+    tileMode：平铺模式，就跟Windows系统桌面图片的平铺模式（平铺，拉伸，适应，居中，跨区，
+              填充等）一样
+              disable表示关闭平铺，是默认值，当开启平铺模式后，gravity属性失效；
+              repeat：简单的水平和垂直方向上的平铺；
+              mirror：水平和垂直方向上的镜面投影效果；
+              clamp：图片周围的像素会拉伸到周围区域。
+-->

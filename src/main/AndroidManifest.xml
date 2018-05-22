@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haoyue.notedemos">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <meta-data
+        android:name="com.taobao.android.hotfix.IDSECRET"
+        android:value="24824243-1" />
+    <meta-data
+        android:name="com.taobao.android.hotfix.APPSECRET"
+        android:value="2581b03babe1a2f0bd4e811ea68e9a65" />
+    <meta-data
+        android:name="com.taobao.android.hotfix.RSASECRET"
+        android:value="MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC1Z2FyKeaFTWF+GABGr7mwTLh5j/Anje1tgLa+b0KHKsM8dIPCgzxJCeoIbQsYzdV9V//tyc6eLbqdQiLcm7sbO5zU26t+0nLFIqS6myyJausVwYzzP0rzcjbPTgzvn9neQiSNe7H0vhErUgWh2DvOhJHNnoYuLU4eCGj5+xqBgLuuyndHkGuo6GaGXTrEdUZqSPqT+G7EVXBGIzHIgr+0AmXwtAUjleBQdmQo3YbnNll9gxYyDVgdIW/lLDXJrjCXZHg5uAAtIeBGzOdrQn1QUqu6RaCdUhpg+QQWzaMndJ2o392Qcb6sL9unhO9HYLfbARtClOw7wrRDSAmYrrthAgMBAAECggEAFl4t/Na/zvYQrGynNBAc9GkxYgPml+n/Ob5iSi8L5ADY3A595LEr8NGhIvLXKHLQ/UipjReSO5zl4tgx1kP5mU0LdI+1oMiwUDCKYVwa7MLbQ+5+w8utIUGXEo7MN4vdYHOFcFCtS8FX+qB9g0xXa4qbM+B1KSJ6/GcLEq/sv8T7UAkhFAO/8PFPSaupWzXa8q7vqTSGxoK+L38+WADREypyY6xpBzqe2iqkmptnhlENPpehE2dRWPepUB4d8g/L0OwZAw8N86HzcQxU/VD92/dl30MbETSvSTdF45VE9mSD9/UqKNVBoxNXEHJNdQi0XhJ/tCSMCyEbw0x4ca9YVQKBgQD0MiEMWV8CH9f8kVnfiQwzt4pWcAzg29U91EYIj6hd8R+nQR+5Poja3WhG2XnrHLbEgeU1i8i4MuuqNeZFM8ZM09LRVt7t5Z1tI4/ZxskPluxf6J6F4AIMyPcVPtVb7v0TGPRrxUYBp4zBjJeuiBSW50qT7eaocX3HrOmVfTjvMwKBgQC+LDbUi2QRmoLtVOBJXnkAr/XpGf+ju+lhu/rRXiJrAx1dlcx5JOVK/fwQiROlXfJu4k8aDR48v/McNSrycvCrMZf9Za5eEOfLJINI9QkGa2Wq7kqfTqo6dGn++RHTea3sTzHdH3zivNIsQ597wUm9dF3dkrNkFN56Fe8T1EB7GwKBgQDWfOGCU02cNBQmiBUEvv+0vVYJLkphhzX6JOWOx3//Y7eF1THkKAVVGHxrHsJzvLjcSavmKG2ZPUC6NLWZuyxGdxgJP+B33OM15bKIeo5H3yyn4U68EFI8oJhGVPZa1cP8bkLiFlizQ1Pi/XaNmoFbOrTK0n9zHJx6MmrJH0BO+QKBgE3I2+x3z0h8AI1+p/aak7e6QUVFAxE/rSfysZatgDpxHbPHr8jlVHwmAtHon4aGNMEyA9TOBM4oXRHulVBxvwrm0BovWvDSzVyD5McUospjZ0RRD2i1zl72etx1l9r97Cu6ANVHKde8D+NXDYaa+sRpMnOMq5+GAbHCAvYDXRR9AoGAXC7XSoD2ptV83a+qsIBJfJD92DuDbXrzPuKwV84OipbIe3XnpTnqwCyDUbTV5BRZQVdmvbC+moMUTPgwZ/l7kgR+Czr1Up77yK85vY9ivysqg27iT5M0tGlvLvOrQyV1xl39P2cv+9CXDRoXifhi04xMXoYAPRcifDrwE2TYmvk=" />
+
+    <application
+        android:name=".app_base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="NoteDemos"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bitmap.BitMapActivity" />
+        <activity android:name=".app_base.BaseActivity" />
+        <activity android:name=".drawable.DrawableActivity" />
+        <activity android:name=".drawable.ShapeActivity" />
+        <activity android:name=".window.WindowActivity" />
+        <activity android:name=".asynctask.LoadImageActivity" />
+        <activity android:name=".floatball.FloatBallActivity" />
+
+        <service android:name=".floatball.FloatServive" />
+
+        <activity
+            android:name=".input.InputDialogActivity"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".input.DialogActivity" />
+        <activity android:name=".sql.GreenDaoActivity" />
+        <activity android:name=".loadgif.LoadGifActivity" />
+        <activity android:name=".screenshots.ShotsViewActivity" />
+        <activity android:name=".screenshots.UtilsActivity" />
+        <activity android:name=".webview.WebViewActivity" />
+        <activity android:name=".webview.JsCallJavaActivity" />
+        <activity android:name=".retrofit_learn.RetrofitActivity" />
+        <activity android:name=".toutiao_ui.TouTiaoActivity" />
+        <activity android:name=".drawerlayout.DrawerLayoutActivity" />
+        <activity android:name=".drawerlayout.AndroidNativeActivity" />
+        <activity android:name=".my_recyclerview.RecyclerViewItemActivity" />
+        <activity android:name=".nestscrollview.NestedScrollViewActivity" />
+        <activity android:name=".tablayout.TabLayoutActivity" />
+        <activity android:name=".dialog.DialogActivity" />
+        <activity android:name=".crash.CrashHandlerActivity" />
+        <activity android:name=".retrofit_learn.InstanceActivity" />
+        <activity android:name=".retrofit.mvp.view.MvpAndRxSerieActivity" />
+        <activity
+            android:name=".statusbar.StatusBarActivity"
+            android:theme="@style/status_toolbar_same_color" />
+        <activity
+            android:name=".statusbar.TitleBarActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".eventbus.EventBusActivity" />
+        <activity android:name=".eventbus.TestEventBus2Activity" />
+        <activity android:name=".eventbus.TestEventBus1Activity" />
+        <activity android:name=".zhihu.ZhiHuActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.haoyue.notedemos.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <activity android:name=".materialdesign.MaterialDesignActivity" />
+        <activity android:name=".materialdesign.SophixActivity" />
+        <activity android:name=".lrecyclerview.view.LRecyclerViewActivity" />
+        <activity android:name=".lrecyclerview.view.LoadArticleActivity" />
+        <activity android:name=".lrecyclerview.view.ArticleTypeActivity" />
+        <activity android:name=".dialogfragment.DialogFragmentActivity" />
+        <activity android:name=".flowlayout.FlowLayoutActivity" />
+        <activity android:name=".recycler.RecyclerViewHeaderAndFooterActivity" />
+        <activity android:name=".moreprocess.MoreProcessActivity"></activity>
+    </application>
+
+</manifest>

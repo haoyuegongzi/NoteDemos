@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.haoyue.notedemos"
+        minSdkVersion 21
+        targetSdkVersion 27
+        versionCode 7
+        versionName "1.0.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        //突破应用的方法数65536的限制
+        multiDexEnabled true
+    }
+
+    greendao {
+        //版本号，升级时可配置
+        schemaVersion 1
+        daoPackage 'com.haoyue.greendao'
+        targetGenDir 'src/main/java'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    //签名文件配置   切记：signingConfigs一定要放在buildTypes的前面，否则报异常：找不到
+//    signingConfigs {
+//        debug {
+//            storeFile file('AndroidStudioSingeFile.jks')
+//            storePassword "AndroidStudioSingeFile"
+//            keyAlias "AndroidStudioSingeFile"
+//            keyPassword "AndroidStudioSingeFile"
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+//        }
+//
+//        release {
+//            storeFile file('AndroidStudioSingeFile.jks')
+//            storePassword "AndroidStudioSingeFile"
+//            keyAlias "AndroidStudioSingeFile"
+//            keyPassword "AndroidStudioSingeFile"
+//            v1SigningEnabled true
+//            v2SigningEnabled true
+//        }
+//    }
+
+    buildTypes {
+//        debug {
+//            // 显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "true"
+//            versionNameSuffix "-debug"
+//            minifyEnabled false
+//            zipAlignEnabled false
+//            shrinkResources false
+//            signingConfig signingConfigs.debug
+//        }
+//        release {
+//            // 不显示Log
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+//            //混淆开关
+//            minifyEnabled true
+//            zipAlignEnabled true
+//            // 移除无用的resource文件
+//            shrinkResources true
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'org.greenrobot:greendao:3.2.2'
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support:design:27.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+
+    //AS3.0.1版本以上，butterknife不能够用最新版本，否则无法使用。
+    implementation 'com.jakewharton:butterknife:8.6.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
+
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.9.0'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.3'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'junit:junit:4.12'
+    compile 'com.zhihu.android:matisse:0.4.3'
+
+    compile 'com.aliyun.ams:alicloud-android-hotfix:3.2.0'
+
+    compile 'com.github.jdsjlzx:LRecyclerView:1.5.0'
+
+    testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+
+
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-1'
+    //没有使用特殊Header，可以不加这行
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-1'
+
+    compile 'com.hyman:flowlayout-lib:1.1.2'
+
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30'
+}

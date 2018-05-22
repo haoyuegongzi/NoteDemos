@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context="com.haoyue.notedemos.floatball.FloatBallActivity">
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="启动悬浮球"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/state_selector"/>
+
+    <Button
+        android:id="@+id/btStop"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:text="停用悬浮球"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:background="@drawable/state_selector"/>
+
+</LinearLayout>
